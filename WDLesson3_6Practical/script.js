@@ -29,12 +29,12 @@ function slope(){
 
 
 
-function BMI(){
-    let height= parseFloat(document.getElementById("h").value);
-    let weight= parseFloat(document.getElementById("w").value);
-    let op = document.getElementById("output");
-    let bmi = w/(l)**2
-    op.innerHTML=`Your BMI is ${bmi}`;
+function bmi(){
+    let h= parseFloat(document.getElementById("h").value);
+    let w= parseFloat(document.getElementById("w").value);
+    let out = document.getElementById("out");
+    let bmi = w/((h)**2)
+    out.innerHTML=`Your BMI is ${bmi}`;
 }
 
 
