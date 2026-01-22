@@ -33,7 +33,7 @@ function bmi(){
     let h= parseFloat(document.getElementById("h").value);
     let w= parseFloat(document.getElementById("w").value);
     let out = document.getElementById("out");
-    let bmi = w/((h)**2)
+    let bmi = 703 * w/(h)**2
     out.innerHTML=`Your BMI is ${bmi}`;
 }
 
