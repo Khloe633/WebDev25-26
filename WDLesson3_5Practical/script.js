@@ -29,16 +29,16 @@ let pi = 3.1415926;
 
 function cirArea(){
 let r= parseFloat(document.getElementById("rad").value);
-let op= document.getElementById("output");
+let op= document.getElementById("op");
 let ar = pi * (r)**2;
 op.innerHTML= "Area is " + ar;
 }
 
 function cirPerimeter(){
 let r= parseFloat(document.getElementById("rad").value);
-let op= document.getElementById("output");
+let op= document.getElementById("op");
 let per = pi * 2 * r;
-op.innerHTML= "Area is " + per;
+op.innerHTML= "Perimeter is " + per;
 }
 
 /* Challenge Bonus: Complete the area and perimeter functions below for the triangle.  Guidelines,
@@ -47,9 +47,18 @@ op.innerHTML= "Area is " + per;
       3) Display the results in the appropriate element
 */
 function triArea(){
-
+let base= parseFloat(document.getElementById("b").value);
+let height= parseFloat(document.getElementById("he").value);
+let op= document.getElementById("o");
+let area = 0.5 * (base*height)
+op.innerHTML= "Area is " + area;
 }
 
 function triPerimeter(){
-
+let s1= parseFloat(document.getElementById("s1").value);
+let s2= parseFloat(document.getElementById("s2").value);
+let s3= parseFloat(document.getElementById("s3").value);
+let op= document.getElementById("o");
+let perm = s1 + s2 + s3;
+op.innerHTML= "Perimeter is " + perm;
 }
