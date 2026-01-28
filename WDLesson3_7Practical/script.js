@@ -25,12 +25,14 @@ function calcDist(){
 
 function calcCI(){
    let p= parseFloat(document.getElementById("p").value); 
-   let rate= parseFloat(document.getElementById("rate").value);   
+   let r= parseFloat(document.getElementById("rate").value);   
    let n= parseFloat(document.getElementById("n").value);   
    let t= parseFloat(document.getElementById("t").value);   
 
-   let a= p*(Math.pow((1+(rate/n),n*t)));
+   let a= p*(Math.pow(1+(r/100)/n,n*t));
    let op= document.getElementById("out");
    op.innerHTML=`Your compound interest in ${n} years is ${a}`; 
 }
+
+//a.toFixed(2): rounds number 2 decimal places (ie if you have 3.145), it rounds to 3.15
 
