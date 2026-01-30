@@ -14,8 +14,10 @@ function cylinder(){
  
   /* Challenge 7: Is the following calculation for volume of a cylinder correct? */
   let v = Math.PI * Math.pow(r,2) * h;
+  v=v.toFixed(3)
 
   /* Challenge 8: Are there any errors in displaying the output? */
   output.innerHTML= `Volume of the cylinder is ${v}`;
+
 
 }
