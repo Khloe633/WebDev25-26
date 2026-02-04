@@ -8,24 +8,23 @@
     <script>
     function translateHouse(){
         let lang = document.getElementById("language").value;
-        let house = ""
-        let output = document.getElementById("output");
-
+        let op=document.getElementById("output");
+        let house = "";
 
         // Challenge 9: If the language is equal to "Spanish", set house to "casa"
-if (lang==Spanish){
-  house=`Casa`;
+if (lang=="Spanish"){
+  house="Casa";
 }
         // Challenge 10: Make a similar decision for the other two languages in the drop down.
-if (lang==Chinese){
-  house=`Fángzǐ`;
+if (lang=="Chinese"){
+  house="Fángzǐ";
 }
 
-if (lang==Arabic){
-  house=`Manzil`;
+if (lang=="Arabic"){
+  house="Manzil";
 }
         // Challenge 11: Display an appropriate message stating "house" in the specified language is given translation.            
-output.innerHTML=`House in ${lang} is ${house}`;
+        op.innerHTML = `House in ${lang} is "${house}"`;
       }
 
     </script>
