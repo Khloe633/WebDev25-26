@@ -34,28 +34,28 @@ function calcArea(){
 2) You will need to write HTML as part of the output.  
    For example, output.innerHTML = `<input src="pic.png">` would place the image in the <div>*/
 function pet(){
-  let a = document.getElementById("animal");
-  let e = document.getElementById("emotion");
+  let a = document.getElementById("animal").value;
+  let e = document.getElementById("emotion").value;
   let op=document.getElementById("output");
-  let image="";
+  let image=""
 
-  if (a =="Bear" && e =="funny"){
-    image="funnyBear.jpg"
+  if (a=="Bear" && e=="Funny"){
+    image="funnyBear.jpg";
   }
-if (a =="Cat" && e =="funny"){
-    image="funnyCat.jpg"
+  if (a=="Cat" && e =="Funny"){
+    image="funnyCat.jpg";
   }
-if (a =="Dog" && e =="funny"){
-    image="funnyDog.jpg"
+  if (a =="Dog" && e =="Funny"){
+    image="funnyDog.jpg";
   } 
-  if (a =="Bear" && e =="sad"){
-    image="sadBear.jpg"
+  if (a =="Bear" && e =="Sad"){
+    image="sadBear.jpg";
   }
-  if (a =="Cat" && e =="sad"){
-    image="sadCat.jpg"
+  if (a =="Cat" && e =="Sad"){
+    image="sadCat.jpg";
   }
-  if (a =="Dog" && e =="sad"){
-    image="sadDog.jpg"
+  if (a =="Dog" && e =="Sad"){
+    image="sadDog.jpg";
   }
-  op.innerHTML= `<img src="${image}">`
+    op.innerHTML= `<img src="${image}">`
   }
