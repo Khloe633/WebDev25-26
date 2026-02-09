@@ -18,13 +18,13 @@ function calcArea(){
   let l = parseInt(document.getElementById("l").value);
   let w = parseInt(document.getElementById("w").value);
   let msg="";
-  let a = l * w;
   let output = document.getElementById("output");
   output.innerHTML=`The area of the rectangle is ${a}`;  
       if (l<= 0 || w<=0){
     msg="Inappropiate Measurement";
   }else{
     msg=`${a}`;  
+    let a = l * w;
   }
   output.innerHTML=`${msg}`;  
 }
