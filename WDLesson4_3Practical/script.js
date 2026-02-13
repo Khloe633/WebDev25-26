@@ -8,7 +8,7 @@ function calcBMI(){
        let w = parseFloat(document.getElementById("w").value);
        let h = parseFloat(document.getElementById("h").value);
        let output=document.getElementById("output");
-       let bmi= 703 * w/(h)**2;
+       let bmi= 703 * w/(h**2);
        let status="";
        let filename="";
        if (bmi<18.5){
