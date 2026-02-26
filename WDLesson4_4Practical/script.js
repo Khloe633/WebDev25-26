@@ -1,25 +1,45 @@
 /* Challenge 2: Complete the function generateProblem by ,
        1) Create a variable for the <span> with id of problem
        2) Generate two random numbers between 0 and 20
-       3) Store the correct answer in the variable correct.  This will be used in checkProblem( )
+       3) Store the correct answer in the variable correct declared below.  This will be used in checkResponse( )
        4) Using string interpolation, display an addition problem like "2 + 2 =" except using the random numbers generated. 
 */
-let correct;
+let correct = num1 + num2;
 function generateProblem(){
-
+let num1 = Math.floor(Math.random()*(20-0+1)+0);
+let num2 = Math.floor(Math.random()*(20-0+1)+0);
+let problem = document.getElementById("problem");
+problem.innerHTML=`${num1} +${num2}`;
 }
 
-/* Challenge 3: Complete the function checkProblem by ,
+/* Challenge 3: Complete the function checkResponse by ,
        1) Create a variable for the users response
        2) Create a variable for the <div> with id of output
        3) Create a variable msg for the output
        4) Using an if / else statement check to see if the user response is correct. 
            a) if the reponse is correct, set msg to "Correct!" along with the correct image
-           b) otherwise set msg to "Incorrect. The answer is " followed by the correct answer.  Also include incorrect image
+           b) otherwise set msg to "Incorrect. The answer is " followed by the correct answer.  
+           Also include incorrect image afterwards
        4) Display msg in the output
 */
-function checkProblem(){
-
+function checkResponse(){
+let response= document.getElementById("reponse").value;
+let output=document.getElementById("output");
+let msg="";
+let image="";
+if (response == correct){
+       msg="Correct!";
+       image="correct.webp";
+}else{
+       msg.innerHTML=`Incorrect! The answer is ${correct}`;
+       image="incorrect.avif";
 }
+output.innerHTML=`${msg}<br><img src="${image}">`;
+}
+
+/* Challenge Bonus: Could you randomize the operations so it is not only addition.  
+Hint: Generate a random number to decide whether the problem is an addition, substraction, multiplication or division problem.
+*/
+
 
 
