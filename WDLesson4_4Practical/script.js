@@ -5,6 +5,7 @@
        4) Using string interpolation, display an addition problem like "2 + 2 =" except using the random numbers generated. 
 */
 let correct = num1 + num2;
+
 function generateProblem(){
 let num1 = Math.floor(Math.random()*(20-0+1)+0);
 let num2 = Math.floor(Math.random()*(20-0+1)+0);
@@ -23,15 +24,15 @@ problem.innerHTML=`${num1} +${num2}`;
        4) Display msg in the output
 */
 function checkResponse(){
-let response= document.getElementById("reponse").value;
-let output=document.getElementById("output");
+let response= document.getElementById("response").value;
+let output= document.getElementById("output");
 let msg="";
 let image="";
 if (response == correct){
        msg="Correct!";
        image="correct.webp";
 }else{
-       msg.innerHTML=`Incorrect! The answer is ${correct}`;
+       msg.innerHTML=`incorrect! The answer is ${correct}`;
        image="incorrect.avif";
 }
 output.innerHTML=`${msg}<br><img src="${image}">`;
