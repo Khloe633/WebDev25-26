@@ -4,13 +4,14 @@
        3) Store the correct answer in the variable correct declared below.  This will be used in checkResponse( )
        4) Using string interpolation, display an addition problem like "2 + 2 =" except using the random numbers generated. 
 */
-let correct = num1 + num2;
+let correct;
 
 function generateProblem(){
+let problem = document.getElementById("problem");
 let num1 = Math.floor(Math.random()*(20-0+1)+0);
 let num2 = Math.floor(Math.random()*(20-0+1)+0);
-let problem = document.getElementById("problem");
-problem.innerHTML=`${num1} +${num2}`;
+correct= num1+ num2;
+problem.innerHTML= `${num1} +${num2} = `;
 }
 
 /* Challenge 3: Complete the function checkResponse by ,
@@ -23,6 +24,8 @@ problem.innerHTML=`${num1} +${num2}`;
            Also include incorrect image afterwards
        4) Display msg in the output
 */
+
+
 function checkResponse(){
 let response= document.getElementById("response").value;
 let output= document.getElementById("output");
@@ -32,7 +35,7 @@ if (response == correct){
        msg="Correct!";
        image="correct.webp";
 }else{
-       msg.innerHTML=`incorrect! The answer is ${correct}`;
+       msg=`Incorrect! The answer is ${correct}`;
        image="incorrect.avif";
 }
 output.innerHTML=`${msg}<br><img src="${image}">`;
@@ -41,6 +44,5 @@ output.innerHTML=`${msg}<br><img src="${image}">`;
 /* Challenge Bonus: Could you randomize the operations so it is not only addition.  
 Hint: Generate a random number to decide whether the problem is an addition, substraction, multiplication or division problem.
 */
-
 
 
