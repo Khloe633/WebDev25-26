@@ -24,7 +24,7 @@ function calcCI(){
     let build="";
     let output= document.getElementById("output");
     for(let t=0; t<=years; t+=1){
-        let a = p*(Math.pow(1+(r/100)/n,n*t));
+        let a = p*(1+ r/n)**(n*t);
         build += `Year ${t}: $ ${a.toFixed(2)}<br>`;
     }
 output.innerHTML= build;
