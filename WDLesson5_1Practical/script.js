@@ -17,7 +17,7 @@ Year N: $xxxxxx
 
 
 function calcCI(){
-    let p= parseInt(document.getElementById("p").value);
+    let p= parseFloat(document.getElementById("p").value);
     let r= parseFloat(document.getElementById("r").value);
     let n= parseInt(document.getElementById("n").value);
     let years= parseInt(document.getElementById("t").value);
