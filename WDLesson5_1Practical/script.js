@@ -22,6 +22,8 @@ function calcCI(){
     let n= parseInt(document.getElementById("n").value);
     let years= parseInt(document.getElementById("t").value);
     let build="";
+
+    //Calculation within loop
     let output= document.getElementById("output");
     for(let t=0; t<=years; t+=1){
         let a = p*(1+ r/n)**(n*t);
