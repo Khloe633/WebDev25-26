@@ -41,7 +41,7 @@ input[type="text"]{
             1) Provide an appropriate width and height for the image (say 200px) for the image
             2) Set object-fit to cover;
 */
-.class{
+.pizza{
   width:200px;
   height:200px;
   object-fit:cover;
@@ -50,8 +50,6 @@ input[type="text"]{
                 Set height to an appropriate size (say 50 px)
 
 */
-
-
 .title{
   height:50px;
 }
