@@ -11,7 +11,16 @@
 */
 
 function balance(){
+let p= document.getElementById("p");
+let r= document.getElementById("r");
+let n=1;
+let t= document.getElementById("t");
 
+ let output=document.getElementById("output");
+ let build="<table><tr><th>Years</th><th>Compound Interest</th></tr>";
+ for(let x=1; x<=t; x+=1){
+        build+="";
+ }
 
 }
 
@@ -21,6 +30,6 @@ function balance(){
         3) Adjust the heading reflect the compound length.  Below are some typical lengths
               a. n = 1 then the interest is compounded yearly
               b. n = 12 then the interest is compounded monthly
-              c. n = 3 then the interest is compounded quarterly
+              c. n = 4 then the interest is compounded quarterly
               d. n = 2 then the interest is compounded bi-yearly
 */ 
