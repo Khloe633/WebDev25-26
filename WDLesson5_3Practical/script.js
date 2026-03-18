@@ -19,11 +19,15 @@ let t= document.getElementById("t");
  let output=document.getElementById("output");
  let build="<table><tr><th>Years</th><th>Compound Interest</th></tr>";
  for(let x=1; x<=t; x+=1){
-        build+="let a = p*(1+ r/n)**(n*t);
-        build += `<tr><td>Year ${x}: $ ${a.toFixed(2)}</td></tr>`;
+        let a = p*(1+ r/n)**(n*t);
+        build+=`<tr>
+                <td>Year${x}:</td>
+                <td>$${a.toFixed(2)}</td>
+                </tr>`;
     
  }
 build+="</table>"
+output.innerHTML=build;
 }
 
 /* Challenge Bonus: Allow the user to enter n.  This will require you to modify,
