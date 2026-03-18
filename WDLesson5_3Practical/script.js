@@ -11,20 +11,18 @@
 */
 
 function balance(){
-let p= document.getElementById("p");
-let r= document.getElementById("r");
-let n=1;
-let t= document.getElementById("t");
-
- let output=document.getElementById("output");
- let build="<table><tr><th>Years</th><th>Compound Interest</th></tr>";
- for(let x=1; x<=t; x+=1){
-        let a = p*(1+ r/n)**(n*t);
+let output=document.getElementById("output");
+let p= document.getElementById("p").value;
+let r= document.getElementById("r").value;
+let t= document.getElementById("t").value;
+let build="";
+build+=`<table><tr><th>Years</th><th>Balance</th></tr>`;
+for(let x=0; x<=t; x+=1){
+        let a = p * Math.pow(1+ (r/100),x)
         build+=`<tr>
-                <td>Year${x}:</td>
+                <td>${x}:</td>
                 <td>$${a.toFixed(2)}</td>
                 </tr>`;
-    
  }
 build+="</table>"
 output.innerHTML=build;
