@@ -37,3 +37,5 @@ output.innerHTML=build;
               c. n = 4 then the interest is compounded quarterly
               d. n = 2 then the interest is compounded bi-yearly
 */ 
+
+
