@@ -36,7 +36,7 @@ function init(){
 for (let i=0; i<meat_images.length;i++){
   build+=`<div class="card">
     <h2>${meat_titles[i]}</h2>
-    <img src="images/${meat_images[i]}">
+    <img class="food" src="images/${meat_images[i]}">
     <h3>${meat_prices[i]}</h3>
   </div>`;
 }
@@ -48,7 +48,7 @@ build=``;
 for (let i=0; i<seafood_images.length;i++){
   build+=`<div class="card">
     <h2>${seafood_titles[i]}</h2>
-    <img src="images/${seafood_images[i]}">
+    <img class="food" src="images/${seafood_images[i]}">
     <h3>${seafood_prices[i]}</h3>
   </div>`;
 }
@@ -59,7 +59,7 @@ build=``;
 for (let i=0; i<dessert_images.length;i++){
   build+=`<div class="card">
     <h2>${dessert_titles[i]}</h2>
-    <img src="images/${dessert_images[i]}">
+    <img class="food" src="images/${dessert_images[i]}">
     <h3>${dessert_prices[i]}</h3>
   </div>`;
 }
