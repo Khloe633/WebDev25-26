@@ -109,5 +109,5 @@ for (let i=0; i<desserts.length;i++){
 
   output.innerHTML = build;
   // Write the title "Desserts" in the div with id 'title'
-title.innerHTML="Desserts"
+title.innerHTML="Desserts";
 }
