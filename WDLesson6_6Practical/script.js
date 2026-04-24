@@ -89,7 +89,7 @@ function filterByZip(){
 
 // Challenge 4: Create an event handler (function) to filter the 311 Service Request by complaint type.
 
-function filterComplaint(){
+function filterByComplaint(){
   let output = document.getElementById("output");
   let complainttype = document.getElementById("complainttype").value;
   let result = document.getElementById("result");
