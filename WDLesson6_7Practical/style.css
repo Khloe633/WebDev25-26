@@ -1,7 +1,7 @@
 html,body{
   margin:0 auto;
   font-family:Arial;
-  background-image:url(https://gifcity.carrd.co/assets/images/gallery63/41e4af49.jpg?v=3fc8f5cd);
+  background-image:url(https://gifcity.carrd.co/assets/images/gallery72/74df7dbc.jpg?v=3fc8f5cd);
 }
 .container{
   display:flex;
@@ -26,14 +26,14 @@ nav a:hover{
   color:white;
 }
 .subbanner{
-    background-color:rgb(255, 165, 161);
+    background-color:tomato;
 }
 #banner{
   background-color:rgb(190, 54, 54);
   color:white;
 }
 #footer{
-  background-color:rgb(255, 165, 161);
+  background-color:tomato;
   color:white;
   /*position:fixed;*/
   left: 0;

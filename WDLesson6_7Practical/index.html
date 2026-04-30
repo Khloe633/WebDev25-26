@@ -12,7 +12,7 @@
     <div id="banner" class="container center">
       <div style="text-align:center">
           <h1>NYC Open Data</h1>
-          <h2>Collision Course(Filtering Collision Data</h2>
+          <h2>Collision Course(Filtering Collision Data)</h2>
       </div>
     </div>
 
@@ -28,32 +28,32 @@
     <div class="container">
       <div id="leftPanel">
         <!--Card below is the basic HTML to use for Challenge 1 and 3 -->
-        <div class="card">
+        <div class="card white">
           <h3>SEARCH By Borough</h3>
           <input type="text" id="borough" placeholder="Enter Borough (all CAPS)">
           <hr></hr>
           <a class="button" onclick="filterByBorough()"> Search </a>
         </div>
         <!--Challenge 1: Create another UI in order to filter by zip code. [See Challenge 2 in script.js] -->
-        <div class="card">
-          <h3>SEARCH By Zip Code</h3>
-          <input type="text" id="zip" placeholder="Enter Zip Code (all CAPS)">
+        <div class="card white">
+          <h3>SEARCH By Factor</h3>
+          <input type="text" id="factor" placeholder="Enter Zip Code (all CAPS)">
           <hr></hr>
-          <a class="button" onclick="filterByZip()"> Search </a>
+          <a class="button" onclick="filterByFactor()"> Search </a>
         </div>
 
         <!--Challenge 3: Create another UI in order to filter by complaint type. [See Challenge 4 in script.js] -->
-<div class="card">
-          <h3>SEARCH By Complaint Type</h3>
-          <input type="text" id="complainttype" placeholder="Enter Complaint Type (all CAPS)">
+<div class="card white">
+          <h3>SEARCH By Vehicle Type</h3>
+          <input type="text" id="vehicle" placeholder="Enter Complaint Type (all CAPS)">
           <hr></hr>
-          <a class="button" onclick="filterByComplaint()"> Search </a>
+          <a class="button" onclick="filterByvehicle()"> Search </a>
         </div>
 
       </div>
 
       <div class="card" id="rightPanel">
-        <h1>311 Service Requests</h1>
+        <h1>Motor Vehicle Collisions</h1>
         <div id="result" class="container"></div>
         <div id="output" class="container"></div>
       </div>
@@ -61,7 +61,7 @@
     </div>
 
     <div id="footer" class="container center">
-      <h3>Lesson 6.6 Practical</h3>
+      <h3>Lesson 6.7 Practical</h3>
     </div>  
   </body>
 </html>
