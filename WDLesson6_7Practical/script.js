@@ -89,7 +89,7 @@ function filterByvehicle(){
 
 function filterbyfactorandcasualty(){
   let factor = document.getElementById("factor").value;
-  let casualty = document.getElementById("casualties").value;
+  let casualty = parseInt(document.getElementById("casualties").value);
   let build = "";
   let ct = 0;
 
