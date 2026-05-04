@@ -22,9 +22,13 @@ async function init(){
               </div>`    
   }
   output.innerHTML = build;
+
+  //dropdown filters
+  let factor = fillDropDown("contributing_factor_vehicle_1");
+  document.getElementById("factor").innerHTML = factor;  
 }
 
-// Code below demonstrates the basic process to filter information by borough. Use this as a guide for Challenges 2 and 4 below.
+//Filter by borough
 function filterByBorough(){
   let output = document.getElementById("output");
   let borough = document.getElementById("borough").value;
@@ -53,12 +57,7 @@ function filterByBorough(){
   output.innerHTML = build;
 }
 
-// Challenge 2: Create an event handler (function) to filter the 311 Service Request by zip code.
-
-
-
-// Challenge 4: Create an event handler (function) to filter the 311 Service Request by complaint type.
-
+//Filter by vehicle type
 function filterByvehicle(){
   let output = document.getElementById("output");
   let vehicle = document.getElementById("vehicle").value;
@@ -85,17 +84,23 @@ function filterByvehicle(){
   }
   result.innerHTML = `${ct} Results found.`
   output.innerHTML = build;
+
+
 }
 
+
+
+
+
 function filterbyfactorandcasualty(){
-  let factor = document.getElementById("factor").value;
+  let factors = document.getElementById("factor").value;
   let casualty = parseInt(document.getElementById("casualties").value);
   let build = "";
   let ct = 0;
 
   for(let i = 0; i < data.length; i+=1){
     let crash = data[i];
-    if(crash.contributing_factor_vehicle_1 == factor && crash.number_of_persons_killed == casualty){
+    if(crash.contributing_factor_vehicle_1 == factors && crash.number_of_persons_killed == casualty){
       build += `<div class="fitted card">
                     <h3>${complaint.complaint_type}</h3>
                     <hr>
