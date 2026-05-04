@@ -25,7 +25,10 @@ async function init(){
 
   //dropdown filters
   let factor = fillDropDown("contributing_factor_vehicle_1");
-  document.getElementById("factor").innerHTML = factor;  
+  document.getElementById("factor").innerHTML = factor;
+
+  let vehicles = fillDropDown("vehicle_type_code1");
+  document.getElementById("vehicle").innerHTML = vehicles;  
 }
 
 //Filter by borough
@@ -84,8 +87,6 @@ function filterByvehicle(){
   }
   result.innerHTML = `${ct} Results found.`
   output.innerHTML = build;
-
-
 }
 
 
@@ -100,7 +101,7 @@ function filterbyfactorandcasualty(){
 
   for(let i = 0; i < data.length; i+=1){
     let crash = data[i];
-    if(crash.contributing_factor_vehicle_1 == factors && crash.number_of_persons_killed == casualty){
+    if(crash.contributing_factor_vehicle_1 == factors && crash.number_of_persons_killed == casualty.value){
       build += `<div class="fitted card">
                     <h3>${complaint.complaint_type}</h3>
                     <hr>

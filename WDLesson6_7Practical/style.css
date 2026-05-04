@@ -29,11 +29,11 @@ nav a:hover{
     background-color:rgb(20, 102, 54);
 }
 #banner{
-  background-color:rgb(190, 218, 63);
-  color:white;
+  background-color:rgb(236, 240, 216);
+  color:rgb(0, 0, 0);
 }
 #footer{
-  background-color:tomato;
+  background-color:rgb(20, 102, 54);
   color:white;
   /*position:fixed;*/
   left: 0;
@@ -46,7 +46,7 @@ nav a:hover{
   margin:10px;
   padding:10px;
   border:2px solid gray;
-  background-color:rgb(219, 195, 148);
+  background-color:rgb(236, 240, 216);
   text-align:center;
 }
 
@@ -86,6 +86,7 @@ nav a:hover{
 .fitted{
   max-width:200px;
   min-width:200px;
+  background-color:rgb(187, 205, 176);
 }
 #result{
   background-color: yellow;
