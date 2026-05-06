@@ -55,9 +55,11 @@ function lottery(num){
 let range = randint(1,48);
 let build="";
 for(let i=0; i<num.length; i+=1){
-  build+=`${range}`;
-  
+  let nums = num[i];
+  nums = range;
+  build+=`${nums}`;
   }
+return build;
 }
 
 

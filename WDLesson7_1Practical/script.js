@@ -26,8 +26,8 @@ display(`You're ${bc}`);
   
   //Challenge 8: Call lottery() with some number and display the results.
 
-let lot= 6;
-display(`Numbers:${lot}`)
+let lot= lottery(6);
+display(`Lottery numbers:${lot},`);
 
 
   //Challengen 10: Create an array survey which contains several "Y" and "N" items. Pass this survey array to the function results( ) and display the value returned.
