@@ -33,7 +33,6 @@ display(`Lottery numbers: ${result}`);
   //Challengen 10: Create an array survey which contains several "Y" and "N" items. Pass this survey array to the function results( ) and display the value returned.
 
   let survey_results = ["Y","N","N","N","N","Y","N","Y","N","Y","Y","N"];
-  display(`<h4>Challenge 10:</h4> 
-              # of Y responses: ${results(survey_results)}`);
+  display(` # of Y responses: ${results(survey_results)}`);
 }
 
