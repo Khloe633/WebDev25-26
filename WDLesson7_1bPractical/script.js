@@ -14,8 +14,12 @@ async function init(){
   //Challenge 2: Test the function card() developed in Challenge 1 by displaying only the first violation to the webpage.
 for(let i=0; i<data.length; i++){
 build+= card(data[i]);
+ct+=1;
 }
 
+ //dropdown filters
+  let violations = fillDropDown("cardInfo.violation");
+  document.getElementById("violation").innerHTML = violations;
   //Challenge 3: Display all the violations to the web page using the function card().
 
   
@@ -23,3 +27,24 @@ build+= card(data[i]);
 }
 
 // Challenge 4: Create a function to filter the information and display only the cards that satisfy specfic condition(s).
+
+
+
+function filterbyvio(){
+  let output = document.getElementById("output");
+  let violation = document.get("violation").value;
+  let result = document.getElementById("result");
+  
+  let build = "";
+  let ct = 0;
+
+  for (let i=0; i<data.length; i++){
+  let vio=data[i];
+  if(cardInfo.violation == violation){
+    build+= card(vio);
+    ct ++;
+  }
+  }
+  result.innerHTML = `${ct} Results found.`;
+  output.innerHTML = build;
+}

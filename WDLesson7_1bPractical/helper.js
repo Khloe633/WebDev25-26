@@ -9,7 +9,7 @@ function get(id){
 function card (cardInfo){
   let build="";
   build+= `<div class="fitted card">
-  <h3>${cardInfo.issuing_agency}</h3>
+  <h3>Number: ${cardInfo.summons_number}</h3>
   <hr>
   <p>${cardInfo.violation}</p>
   <p>${cardInfo.state}</p>
@@ -17,7 +17,7 @@ function card (cardInfo){
   <hr>
   <p>${cardInfo.issue_date}</p>
   <hr>
-  <p>${cardInfo.summons_number}</p>
+  <p>${cardInfo.issuing_agency}</p>
   </div>`
   return build;
 }

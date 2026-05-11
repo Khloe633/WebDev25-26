@@ -7,6 +7,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="helper.js"></script>
     <script src="script.js"></script>
+    <script src="fillDropDown.js"></script>
    </head>
 
   <body onload="init()">
@@ -23,13 +24,9 @@
      <div class="container">
       <div id="leftPanel">
         <div class="card">
-          <h3>By Zip Code and Agency </h3>
-          <p><span class="highlight">Scenario:</span>
-            Traverse through all the 311 Service Request and filter entries by zip code and agency.</p>
-          <input type="text" id="zip" placeholder="Enter Zip Code">
-          <select id="agencies"></select>
-          
-          <a class="button" onclick="filterByZipAndAgency()"> Search </a>
+          <h3>Filter By Violation</h3>
+           <select id="violation"></select>
+          <a class="button" onclick="filterbyvio()"> Search </a>
         </div>
     <div class="container">
       <div class="card" id="rightPanel">
