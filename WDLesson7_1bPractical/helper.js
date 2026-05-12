@@ -6,7 +6,7 @@ function get(id){
 
 //Challenge 1: Create a function card() that accepts the JSON data for each violation, then generates and returns an appropriate card for the violation.
 
-function card (cardInfo){
+function card ( cardInfo ){
   let build="";
   build+= `<div class="fitted card">
   <h3>Number: ${cardInfo.summons_number}</h3>
@@ -18,6 +18,7 @@ function card (cardInfo){
   <p>${cardInfo.issue_date}</p>
   <hr>
   <p>${cardInfo.issuing_agency}</p>
-  </div>`
+  </div>`;
+
   return build;
 }

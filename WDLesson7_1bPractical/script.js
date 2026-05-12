@@ -16,9 +16,8 @@ for(let i=0; i<data.length; i++){
 build+= card(data[i]);
 ct+=1;
 }
-
  //dropdown filters
-  let violations = fillDropDown("cardInfo.violation");
+  let violations = fillDropDown("violation");
   document.getElementById("violation").innerHTML = violations;
   //Challenge 3: Display all the violations to the web page using the function card().
 
@@ -29,22 +28,20 @@ ct+=1;
 // Challenge 4: Create a function to filter the information and display only the cards that satisfy specfic condition(s).
 
 
-
 function filterbyvio(){
-  let output = document.getElementById("output");
-  let violation = document.get("violation").value;
-  let result = document.getElementById("result");
+  let vio = get("violation").value;
+  let result = get("result");
   
   let build = "";
   let ct = 0;
 
-  for (let i=0; i<data.length; i++){
-  let vio=data[i];
-  if(cardInfo.violation == violation){
-    build+= card(vio);
-    ct ++;
+  for(let i = 0; i < data.length; i+=1){
+    let violation = data[i];
+    if (cardInfo.violation == vio){
+      build += card(violation);
+      ct++; 
+    }   
   }
-  }
-  result.innerHTML = `${ct} Results found.`;
+  result.innerHTML = `${ct} Results found`;
   output.innerHTML = build;
 }
