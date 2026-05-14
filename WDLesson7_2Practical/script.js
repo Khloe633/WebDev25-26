@@ -11,11 +11,11 @@ async function init(){
   let build = "";
 
   //Challenge 6: Build info cards with button to show map if lat and lon values exist
-  for(let i = 0; i < data.length; i++){
+  for(let i = 0; i< data.length; i+=1){
     let crash = data[i];
     build+= card(crash);
-    
   }
+
   //Challenge 7: Display cards in the div with id "leftPanel"
   leftPanel.innerHTML = build;
 }
@@ -23,12 +23,12 @@ async function init(){
 //Challenge 8: Create a function filterByBoro() that retrieves the borough from the user via text input, filters the data and generates cards for this subset of the data.
 function filterbyboro(){
   leftPanel= get("leftPanel");
-  let boroug= get("borough").value;
+  let boro= get("borough").value;
   let build="";
 
   for(let i=0; i<data.length; i++){
     let crash=data[i];
-    if(crash.borough ==boroug){
+    if(crash.borough == boro){
       build+= card(crash);
     }
   }

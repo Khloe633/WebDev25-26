@@ -11,8 +11,6 @@ let location = [lat, lon];
   } 
   let map = mapObj.setView(location, 15);
 
-
-
 }
 
 // Challenge 4: Create the function card() to generate an appropriate info card with the button to view map
@@ -20,7 +18,7 @@ function card( info ){
   let build = `<div class="card">
                   <h2>${info.id}</h2>
                   <hr>
-                  <p>Location: ${info.location}</p>
+                  <p>Location: ${info.vehicle_type_code1}</p>
                   <h6>${info.borough}</h6>`;
                   if(info.latitude && info.longitude){
                     build += `<input type="button" value="Map" onclick="showMap( ${info.latitude}, ${info.longitude} )">`;
