@@ -5,7 +5,8 @@ let data, info, leftPanel, mapObj; //global variables
 async function init(){
   let link = "mvc.json"; //https://data.cityofnewyork.us/resource/h9gi-nx95.json?$limit=100";
   //Challenge 5: Get the data using the API link and analyze it
-  
+  info = await fetch(link);
+  data = await info.json();
   
   let leftPanel = get("leftPanel");
   let build = "";
