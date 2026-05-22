@@ -15,10 +15,10 @@ async function init(){
                  <hr>
               <p>Location: ${farm.streetaddress}, ${farm.borough}</p>
               <br>
-              <p>Community District: ${community_district}</p>
+              <p>Community District: ${farm.community_district}</p>
               <p>Operating hours:${farm.daysoperation}, ${farm.hoursoperations}</p>
               <p>Open year round?:${farm.open_year_round}</p>
-              <p>Accepts EBT?: ${accepts_ebt}</p>
+              <p>Accepts EBT?: ${farm.accepts_ebt}</p>
               </div>`    
   }
   output.innerHTML = build;
