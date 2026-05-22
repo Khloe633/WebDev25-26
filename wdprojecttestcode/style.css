@@ -5,7 +5,10 @@ html,body{
 .container{
   display:flex;
   padding:10px;
+  overflow:auto;
 }
+
+
 .center{
   justify-content:center;
   align-items:center;

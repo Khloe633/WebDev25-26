@@ -11,7 +11,8 @@ async function init(){
   for(let i = 0; i < data.length; i+=1){
     let farm = data[i];
     build += `<div class="fitted card">
-                 <h2>ID: ${farm.marketname}</h2>
+                 <h3>Name: 
+                 <br>${farm.marketname}</h3>
                  <hr>
               <p>Location: ${farm.streetaddress}, ${farm.borough}</p>
               <br>
