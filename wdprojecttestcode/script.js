@@ -24,6 +24,20 @@ async function init(){
   output.innerHTML = build;
 }
 
+function filterbyyear(){
+  let year= get("year").value;
+  let build ="";
+
+
+   for(let i=0; i<data.length; i++){
+    let farm=data[i];
+    if(farm.year == year){
+      build+= card(farm);
+    }
+  }
+  output.innerHTML=build;
+}
+
 
 function filterbyboroandebt(){
   let boro= get("boro").value;
